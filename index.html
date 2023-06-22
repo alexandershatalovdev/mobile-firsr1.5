@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__iner">
+            <h3>Ремонт техники различных брендов</h3>
+          </div>
+        </div>
+      </header>
+         <div class="container-logo">
+        <div class="btn__container">
+          <img
+            src="./img/lenovo.svg"
+            alt="lenovo company logo"
+            class="btn__logo"
+          />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+                src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container">
+          <img
+            src="./img/sumsung.svg"
+            alt="sumsung company logo"
+            class="btn__logo"
+          />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+               src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container">
+          <img
+            src="./img/apple.svg"
+            alt="apple company logo"
+            class="btn__logo"
+          />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+                src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container hide-middle">
+          <img
+            src="./img/vivesonic.svg"
+            alt="viewsonic company logo"
+            class="btn__logo"
+          />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+                src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container">
+          <img src="./img/bosh.svg" alt="bosh company logo" class="btn__logo" />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+                src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container">
+          <img src="./img/hp.svg" alt="hp company logo" class="btn__logo" />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+                src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container">
+          <img src="./img/acer.svg" alt="acer company logo" class="btn__logo" />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+                src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container hide-middle">
+          <img src="./img/sony.svg" alt="sony company logo" class="btn__logo" />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+                src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container hide-all">
+          <img
+            src="./img/lenovo.svg"
+            alt="lenovo company logo"
+            class="btn__logo"
+          />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+               src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container hide-all">
+          <img
+            src="./img/sumsung.svg"
+            alt="sumsung company logo"
+            class="btn__logo"
+          />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+                src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+
+        <div class="btn__container hide-all">
+          <img
+            src="./img/apple.svg"
+            alt="apple company logo"
+            class="btn__logo"
+          />
+          <button class="btn__button">
+            <a href="#" class="btn__button-link">
+              <img
+               src="./img/strelka.svg"
+                alt="right arrow"
+                class="btn__button-arrow"
+              />
+            </a>
+          </button>
+        </div>
+      </div>
+          <div class="expand-container">
+          <button id="showAllBtn" class="expand-btn">
+            <img
+              src="./img/expand.svg"
+              alt="expand page arrow"
+              class="expand-icon"
+            />
+            <span class="expand-text">Показать все</span>
+          </button>
+        </div>
+     <script>
+      // Function to handle button click
+      function handleButtonClick() {
+        const hideMiddleDivs = document.querySelectorAll(
+          ".btn__container.hide-middle"
+        );
+        const hideAllDivs = document.querySelectorAll(
+          ".btn__container.hide-all"
+        );
+
+        // Toggle display property of hide-middle divs
+        hideMiddleDivs.forEach((div) => {
+          div.style.display =
+            div.style.display === "none" || div.style.display === ""
+              ? "flex"
+              : "none";
+        });
+
+        // Toggle display property of hide-all divs
+        hideAllDivs.forEach((div) => {
+          div.style.display =
+            div.style.display === "none" || div.style.display === ""
+              ? "flex"
+              : "none";
+
+          const hideMiddleDivsInAll = div.querySelectorAll(
+            ".btn__container.hide-middle"
+          );
+          hideMiddleDivsInAll.forEach((middleDiv) => {
+            middleDiv.style.display =
+              div.style.display === "none" ? "none" : "flex";
+          });
+        });
+
+        // Toggle button text and icon
+        const expandText = document.querySelector(".expand-text");
+        const expandIcon = document.querySelector(".expand-icon");
+
+        expandText.textContent =
+          hideAllDivs[0].style.display === "none" ? "Показать все" : "Скрыть";
+        expandIcon.classList.toggle("rotated");
+      }
+
+      // Add click event listener to the button
+      const showAllBtn = document.getElementById("showAllBtn");
+      showAllBtn.addEventListener("click", handleButtonClick);
+
+      // Function to handle screen resize
+      function handleScreenResize() {
+        const screenWidth = window.innerWidth;
+        const btnContainerDivs = document.querySelectorAll(".btn-container");
+
+        // Show/hide divs based on screen width
+        btnContainerDivs.forEach((div) => {
+          if (screenWidth >= 1280) {
+            if (
+              div.classList.contains("hide-all") ||
+              div.classList.contains("hide-middle")
+            ) {
+              div.style.display = "none";
+            } else {
+              div.style.display = "flex";
+            }
+          } else if (screenWidth >= 1120) {
+            if (div.classList.contains("hide-all")) {
+              div.style.display = "none";
+            } else {
+              //   div.style.display = div.classList.contains("hide-middle")
+              //     ? "flex"
+              //     : "none";
+              // }
+              div.style.display = "flex";
+            }
+          } else if (screenWidth >= 768) {
+            if (
+              div.classList.contains("hide-all") ||
+              div.classList.contains("hide-middle")
+            ) {
+              div.style.display = "none";
+            } else {
+              div.style.display = "flex";
+            }
+          } else {
+            div.style.display = "flex";
+          }
+        });
+      }
+
+      // Add resize event listener to the window
+      window.addEventListener("resize", handleScreenResize);
+
+      // Initial screen setup
+      handleScreenResize();
+    </script>
+  </body>
+</html>
